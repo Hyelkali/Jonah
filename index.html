@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JONAH FORTUNE BUMEI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header id="main-header">
+        <div class="container">
+            <h1 class="logo">JONAH FORTUNE BUMEI</h1>
+            <nav>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Hello, I'm <span>Jonah</span></h2>
+            <p>A <span>Student of Captain Elechi Amadi Polytechnic, Romoula PH</span> Department of <span>Computer science</span>. Let's build something amazing together.</p>
+            <a href="#contact" class="btn">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hello! I'm Jonah, a dedicated Computer Science Student with 2 years of Study. I have a passion for creating engaging digital experiences and a knack for solving complex problems. I thrive in collaborative environments and am always eager to take on new challenges.</p>
+                </div>
+                <div class="about-image">
+                    <img src="./WhatsApp Image 2024-09-13 at 09.51.46_862183e3.jpg" alt="Jonah" class="dynamic-img"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <i class="fas fa-code"></i>
+                    <h3>HTML & CSS</h3>
+                    <p>Expert in crafting responsive and visually appealing web pages using HTML and CSS.</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-cogs"></i>
+                    <h3>JavaScript</h3>
+                    <p>Skilled in creating interactive and dynamic web applications with JavaScript.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-carousel">
+                <div class="project-slide">
+                    <img src="./bg5.jpg" alt="Project 1" class="carousel-img">
+                    <h3>Project 1</h3>
+                    <p>A responsive web app for managing personal tasks efficiently.</p>
+                </div>
+                <div class="project-slide">
+                    <img src="./bg7.jpg" alt="Project 2" class="carousel-img">
+                    <h3>Project 2</h3>
+                    <p>An e-commerce platform with advanced features and smooth UX.</p>
+                </div>
+                <div class="project-slide">
+                    <img src="./bg8.jpg" alt="Project 3" class="carousel-img">
+                    <h3>Project 3</h3>
+                    <p>A stylish portfolio website template to showcase your work.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="experience-content">
+                <div class="experience-item">
+                    <h3>Frontend Developer</h3>
+                    <h4>XYZ Tech, 2022 - Present</h4>
+                    <p>Designed and implemented user interfaces for various web applications, ensuring high performance and cross-browser compatibility.</p>
+                </div>
+                <div class="experience-item">
+                    <h3>Web Developer</h3>
+                    <h4>ABC Software, 2020 - 2022</h4>
+                    <p>Developed interactive web pages and integrated backend services to provide a seamless user experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section">
+        <div class="container">
+            <h2>Testimonials</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <blockquote>"Jonah delivered an exceptional website that exceeded our expectations. Highly recommended!"</blockquote>
+                    <img src="./testimonials-2.jpg" alt="tset1">
+                    <cite>– Client 1</cite>
+                </div>
+                <div class="testimonial">
+                    <blockquote>"Professional, creative, and dedicated. Jonah has a talent for bringing ideas to life."</blockquote>
+                    <img src="./testimonials-3.jpg" alt="test2">
+                    <cite>– Client 2</cite>
+                </div>
+                <div class="testimonial">
+                    <blockquote>"The project was completed on time with great attention to detail. A pleasure to work with Jonah."</blockquote>
+                    <img src="./testimonials-4.jpg" alt="test3">
+                    <cite>– Client 3</cite>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Have a question or want to work together? Fill out the form below or reach out to me via email.</p>
+            <form id="contactForm" onsubmit="return handleSubmit(event)">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <div id="formResponse"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Jonah. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
